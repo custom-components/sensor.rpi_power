@@ -1,0 +1,4 @@
+update_readme:
+  stage: deploy
+  script:
+    - curl -X POST -F token=$README_TOKEN -F ref=master https://gitlab.com/api/v4/projects/7064305/trigger/pipeline
