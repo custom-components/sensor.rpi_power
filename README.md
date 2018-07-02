@@ -18,6 +18,6 @@ key | description
 **platform (Required)** | The platform name.  
   
   
-Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)  
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).  
 ***
 Due to how `custom_componentes` are importerd, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
