@@ -1,0 +1,26 @@
+{  
+  "rpi_charger": {
+        "component": "sensor",
+        "version": "0.0.1",
+        "mantained": "yes",
+        "author": "Peter Skopa @swetoast",
+        "added_to_ha": "false",
+        "added_in_version": "",
+        "overview_img": "false",
+        "title": "rpi_charger",
+        "short_description": "A sensor that checks your Raspberry Pi charger so its not giving you undervoltage.",
+        "configuration": {
+            "platform": "rpi_charger"
+        },
+        "configuration_variables": {
+            "required": {
+                "platform": "The platform name."
+            },
+            "optional": {}
+            },
+        "demo_site_aviable": "false",
+        "demo_site_url": "",
+        "instructions": "",
+        "ext_licenses": "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)."
+    }
+}
