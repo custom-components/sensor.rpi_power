@@ -18,7 +18,7 @@
             },
             "optional": {}
             },
-        "demo_site_aviable": "false",
+        "demo_site_available": "false",
         "demo_site_url": "",
         "instructions": "add to custom_component/sensor/",
         "ext_licenses": "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)."
