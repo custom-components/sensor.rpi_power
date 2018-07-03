@@ -17,7 +17,9 @@ key | description
 :--- | :---  
 **platform (Required)** | Kernel 4.14+  
   
+[Discuss this on the home-assistant forum](https://community.home-assistant.io/t/raspberry-pi-power-sensor-updated-2018-07-03/58155)
+  
   
 Attribution-ShareAlike 4.0 International [(CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)  
 ***
-Due to how `custom_componentes` are importerd, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
+Due to how `custom_componentes` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
