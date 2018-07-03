@@ -1,23 +1,21 @@
-# rpi_charger
+# null
   
-![Version](https://img.shields.io/badge/version-0.0.1-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)   
-A sensor that checks your Raspberry Pi charger so its not giving you undervoltage.
+![Version](https://img.shields.io/badge/version-0.0.1-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/no/null.svg?style=for-the-badge)   
+null
   
-To get started put `/custom_components/sensor/rpi_charger.py` here:  
-`<config directory>/custom_components/sensor/rpi_charger.py`  
+To get started put `/custom_components/null/rpi_charger.py` here:  
+`<config directory>/custom_components/null/rpi_charger.py`  
   
 **Example configuration.yaml:**
 ```yaml
-sensor:
-  platform: rpi_charger
+null:
 ```
 **Configuration variables:**  
   
 key | description  
 :--- | :---  
-**platform (Required)** | Hassbian or HassOS with a 4.14 kernel or higher.  
   
-add to custom_component/sensor/  
-Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).  
+null  
+null  
 ***
 Due to how `custom_componentes` are importerd, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
