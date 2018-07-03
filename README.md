@@ -1,6 +1,6 @@
 # rpi_power
   
-![Version](https://img.shields.io/badge/version-0.0.2-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)   
+![Version](https://img.shields.io/badge/version-0.0.2-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge) [![forum](https://img.shields.io/badge/forum-visit-orange.svg?style=for-the-badge)](https://community.home-assistant.io/t/raspberry-pi-power-sensor-updated-2018-07-03/58155)   
 A sensor that checks your Raspberry Pi charger so its not giving you undervoltage.
   
 To get started put `/custom_components/sensor/rpi_power.py` here:  
@@ -16,8 +16,6 @@ sensor:
 key | description  
 :--- | :---  
 **platform (Required)** | Kernel 4.14+  
-  
-[Discuss this on the home-assistant forum](https://community.home-assistant.io/t/raspberry-pi-power-sensor-updated-2018-07-03/58155)
   
   
 Attribution-ShareAlike 4.0 International [(CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)  
