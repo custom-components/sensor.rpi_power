@@ -14,7 +14,7 @@
         },
         "configuration_variables": {
             "required": {
-                "platform": "The platform name."
+                "platform": "Hassbian or HassOS with a 4.14 kernel or higher."
             },
             "optional": {}
             },
