@@ -15,7 +15,7 @@ sensor:
   
 key | description  
 :--- | :---  
-**platform (Required)** | Kernel 4.14+  
+**Kernel (Required)** | 4.14 or higher  
   
   
 Attribution-ShareAlike 4.0 International [(CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)  
