@@ -1,5 +1,5 @@
 {  
-  "rpi_charger": {
+  "rpi_power": {
         "component": "sensor",
         "version": "0.0.1",
         "mantained": "yes",
@@ -7,20 +7,20 @@
         "added_to_ha": "false",
         "added_in_version": "",
         "overview_img": "false",
-        "title": "rpi_charger",
+        "title": "rpi_power",
         "short_description": "A sensor that checks your Raspberry Pi charger so its not giving you undervoltage.",
         "configuration": {
-            "platform": "rpi_charger"
+            "platform": "rpi_power"
         },
         "configuration_variables": {
             "required": {
-                "platform": "Hassbian or HassOS with a 4.14 kernel or higher."
+                "platform": "The sensor platform name."
             },
             "optional": {}
             },
         "demo_site_available": "false",
         "demo_site_url": "",
-        "instructions": "add to custom_component/sensor/",
-        "ext_licenses": "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)."
+        "instructions": "",
+        "ext_licenses": ""
     }
 }
