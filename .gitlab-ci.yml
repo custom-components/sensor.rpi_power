@@ -1,4 +1,4 @@
 update_readme:
-  stage: deploy
+  stage: build
   script:
-    - curl -X POST -F token=$README_TOKEN -F ref=master https://gitlab.com/api/v4/projects/7064305/trigger/pipeline
+    - curl -X POST -F token=$README_TOKEN -F ref=master -F variables[single_repo]=rpi_power https://gitlab.com/api/v4/projects/7064305/trigger/pipeline
