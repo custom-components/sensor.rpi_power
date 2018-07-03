@@ -1,7 +1,7 @@
 {  
   "rpi_power": {
         "component": "sensor",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mantained": "yes",
         "author": "Peter Skopa @swetoast",
         "added_to_ha": "false",
