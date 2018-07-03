@@ -15,7 +15,7 @@ sensor:
   
 key | description  
 :--- | :---  
-**platform (Required)** | The platform name.  
+**platform (Required)** | Hassbian or HassOS with a 4.14 kernel or higher.  
   
 add to custom_component/sensor/  
 Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).  
