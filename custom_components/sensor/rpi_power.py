@@ -1,5 +1,5 @@
 """
-A component which detects underruns and capped status from the official Raspberry Pi Kernel
+A sensor platform which detects underruns and capped status from the official Raspberry Pi Kernel
 Minimal Kernel needed is 4.14+
 """
 import logging
@@ -11,8 +11,8 @@ ATTR_DESCRIPTION = 'description'
 SYSFILE='/sys/devices/platform/soc/soc:firmware/get_throttled'
 
 ICON = 'mdi:raspberrypi'
-COMPONENT_NAME = 'Rasberry Charger'
-COMPONENT_VERSION = '0.0.1'
+PLATFORM_NAME = 'rpi_power'
+PLATFORM_VERSION = '0.0.1'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -33,7 +33,8 @@ class RaspberryChargerSensor(Entity):
     def update(self):
         import os
         _throttled = os.popen('cat ' + SYSFILE).read()[:-2]
-        if _throttled == '0':
+        if _throttled == '':
+            _throttled = '0'
             self._description = 'No throttling detected'
         elif _throttled == '1000':
             self._description = 'A under-voltage has occurred.'
@@ -51,7 +52,7 @@ class RaspberryChargerSensor(Entity):
 
     @property
     def name(self):
-        return 'Raspberry Pi Charger'
+        return 'RPi Power status'
 
     @property
     def state(self):
