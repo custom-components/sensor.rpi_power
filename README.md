@@ -15,9 +15,9 @@ sensor:
   
 key | description  
 :--- | :---  
-**platform (Required)** | The sensor platform name.  
+**platform (Required)** | Kernel 4.14+  
   
   
-  
+https://creativecommons.org/licenses/by-sa/4.0/  
 ***
 Due to how `custom_componentes` are importerd, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
