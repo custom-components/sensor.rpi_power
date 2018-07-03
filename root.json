@@ -14,7 +14,7 @@
         },
         "configuration_variables": {
             "required": {
-                "platform": "The sensor platform name."
+                "platform": "Kernel 4.14+"
             },
             "optional": {}
             },
