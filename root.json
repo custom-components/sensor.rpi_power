@@ -1,7 +1,7 @@
 {  
   "rpi_power": {
         "component": "sensor",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mantained": "yes",
         "forumpost":"https://community.home-assistant.io/t/raspberry-pi-power-sensor-updated-2018-07-03/58155",
         "author": "Peter Skopa @swetoast",
