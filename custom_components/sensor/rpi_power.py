@@ -20,7 +20,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     import os
     exist=os.path.isfile(SYSFILE)
     if exist == True:
-        add_devices([RaspberryChargerSensor()])
+        add_devices([RaspberryChargerSensor()], True)
     else:
         _LOGGER.critical('Can not read system information, your hardware is not supported.')
 
@@ -31,20 +31,19 @@ class RaspberryChargerSensor(Entity):
         self.update()
 
     def update(self):
-        import os
-        _throttled = os.popen('cat ' + SYSFILE).read()[:-2]
+        _throttled = open(SYSFILE, 'r').read()[:-1]
         if _throttled == '':
             _throttled = '0'
             self._description = 'No throttling detected'
-        elif _throttled == '1000':
+        elif _throttled == '10000':
             self._description = 'A under-voltage has occurred.'
-        elif _throttled == '2000':
+        elif _throttled == '20000':
             self._description = 'ARM frequency capped has with under-voltage.'
-        elif _throttled == '4000':
+        elif _throttled == '40000':
             self._description = 'CPU is throttled due to under-voltage.'
-        elif _throttled == '5000':
+        elif _throttled == '50000':
             self._description = 'CPU is throttled due to under-voltage.'
-        elif _throttled == '5005':
+        elif _throttled == '50005':
             self._description = 'CPU is throttled due to under-voltage.'
         else:
             self._description = 'There is a problem with your power supply or system.'
