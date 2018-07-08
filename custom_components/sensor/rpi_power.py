@@ -32,18 +32,17 @@ class RaspberryChargerSensor(Entity):
 
     def update(self):
         _throttled = open(SYSFILE, 'r').read()[:-1]
-        if _throttled == '':
-            _throttled = '0'
+        if _throttled = '0'
             self._description = 'No throttling detected'
-        elif _throttled == '10000':
+        elif _throttled == '1000':
             self._description = 'A under-voltage has occurred.'
-        elif _throttled == '20000':
+        elif _throttled == '2000':
             self._description = 'ARM frequency capped has with under-voltage.'
-        elif _throttled == '40000':
+        elif _throttled == '3000':
+            self._description = 'ARM frequency capped has with under-voltage.'
+        elif _throttled == '4000':
             self._description = 'CPU is throttled due to under-voltage.'
-        elif _throttled == '50000':
-            self._description = 'CPU is throttled due to under-voltage.'
-        elif _throttled == '50005':
+        elif _throttled == '5000':
             self._description = 'CPU is throttled due to under-voltage.'
         else:
             self._description = 'There is a problem with your power supply or system.'
