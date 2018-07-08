@@ -39,7 +39,7 @@ class RaspberryChargerSensor(Entity):
         elif _throttled == '2000':
             self._description = 'ARM frequency capped has with under-voltage.'
         elif _throttled == '3000':
-            self._description = 'CPU is throttled due to under-voltage.'
+            self._description = 'ARM frequency capped has with under-voltage.'
         elif _throttled == '4000':
             self._description = 'CPU is throttled due to under-voltage.'
         elif _throttled == '5000':
