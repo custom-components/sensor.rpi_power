@@ -12,7 +12,7 @@ SYSFILE='/sys/devices/platform/soc/soc:firmware/get_throttled'
 
 ICON = 'mdi:raspberrypi'
 PLATFORM_NAME = 'rpi_power'
-PLATFORM_VERSION = '0.0.3'
+PLATFORM_VERSION = '0.0.4'
 
 _LOGGER = logging.getLogger(__name__)
 
