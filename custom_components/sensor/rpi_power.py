@@ -6,13 +6,14 @@ import logging
 import voluptuous as vol
 from homeassistant.helpers.entity import Entity
 
+__version__ = '0.0.5'
+
 ATTR_DESCRIPTION = 'description'
 
 SYSFILE='/sys/devices/platform/soc/soc:firmware/get_throttled'
 
 ICON = 'mdi:raspberrypi'
 PLATFORM_NAME = 'rpi_power'
-PLATFORM_VERSION = '0.0.4'
 
 _LOGGER = logging.getLogger(__name__)
 
