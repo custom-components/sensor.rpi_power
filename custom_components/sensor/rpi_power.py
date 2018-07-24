@@ -6,7 +6,7 @@ import logging
 import voluptuous as vol
 from homeassistant.helpers.entity import Entity
 
-__version__ = '0.0.5'
+__version__ = '0.0.6'
 
 ATTR_DESCRIPTION = 'description'
 
