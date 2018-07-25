@@ -19,7 +19,7 @@ sensor:
 | --- | --- | --- | ---
 | **text_state** | False | no | Sets the desctiption as the state if True.
   
-⚠️ This require cernel 4.14 or higher.
+⚠️ This require Kernel 4.14 or higher.
 
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)  
 ***
