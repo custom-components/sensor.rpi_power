@@ -24,3 +24,22 @@ sensor:
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)  
 ***
 Due to how `custom_componentes` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
+
+Here is a simple automation example that will notify you if the psu is failing 
+
+```yaml
+- id: 'rpi_power_issue'
+  alias: Power Problem Notification
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.rpi_power_status
+    above: 0
+    for:
+      minutes: 1
+  condition:
+  action:
+    service: persistent_notification.create
+    data:
+      message: "Charger reported {{ states.sensor.rpi_power_status.state }}"
+      title: "RPI Power Issue"
+```
