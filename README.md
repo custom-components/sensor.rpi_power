@@ -43,7 +43,8 @@ Here is a simple automation example that will notify you if the psu is failing
       message: "Charger reported {{ states.sensor.rpi_power_status.state }}"
       title: "RPI Power Issue"
 ```
-
-[Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)  
 ***
 Due to how `custom_componentes` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
+
+Licensed under:
+[Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)  
