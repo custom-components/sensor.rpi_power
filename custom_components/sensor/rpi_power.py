@@ -8,7 +8,7 @@ from homeassistant.helpers.entity import Entity
 import homeassistant.helpers.config_validation as cv
 from homeassistant.components.sensor import (PLATFORM_SCHEMA)
 
-__version__ = '0.0.7'
+__version__ = '0.0.8'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -53,6 +53,8 @@ class RaspberryChargerSensor(Entity):
             self._description = 'CPU is throttled due to under-voltage.'
         elif _throttled == '5000':
             self._description = 'CPU is throttled due to under-voltage.'
+        elif _throttled == '8000':
+            self._description = 'Soft Temp limit has occurred.'
         else:
             self._description = 'There is a problem with your power supply or system.'
         if self._text_state:
