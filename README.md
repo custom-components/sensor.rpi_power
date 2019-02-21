@@ -4,7 +4,7 @@
 A sensor that checks your Raspberry Pi charger so its not giving you undervoltage.
 
 To get started put `/custom_components/sensor/rpi_power.py` here:  
-`<config directory>/custom_components/sensor/rpi_power.py`  
+`<config directory>/custom_components/rpi_power/`  and rename it to sensor.py
 
 **Example configuration.yaml:**
 
@@ -17,9 +17,9 @@ sensor:
 
 | key | required | default | description
 | --- | --- | --- | ---
-| **text_state** | no | `false` | Sets the desctiption as the state if `true`.
+| **text_state** | no | `false` | Sets the description as the state if `true`.
 
-⚠️ This require Kernel 4.14 or higher.
+⚠️ This requires Kernel 4.14 or higher.
 
 Here is some more information about how to improve your Raspberry Pi power situation.
 
