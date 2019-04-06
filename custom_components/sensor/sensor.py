@@ -8,7 +8,7 @@ from homeassistant.helpers.entity import Entity
 import homeassistant.helpers.config_validation as cv
 from homeassistant.components.sensor import (PLATFORM_SCHEMA)
 
-__version__ = '0.0.8'
+__version__ = '0.0.9'
 
 _LOGGER = logging.getLogger(__name__)
 
