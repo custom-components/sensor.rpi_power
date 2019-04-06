@@ -77,7 +77,7 @@ class RaspberryChargerSensor(Entity):
     @property
     def icon(self):
         """Return the icon of the sensor"""
-        return 'mdi:raspberrypi'
+        return 'mdi:raspberry-pi'
 
     @property
     def device_state_attributes(self):
