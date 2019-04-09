@@ -42,7 +42,7 @@ and then this as an automation that sets off a notification in homeassistant.
     service: persistent_notification.create
     data:
       message: "Charger reported {{ states.sensor.rpi_power_status.state }}"
-      title: "RPI Power Issue"
+      title: "Power Supply Issue"
 ```
 
 **Optional config options:**  
