@@ -55,9 +55,13 @@ and then this as an automation that sets off a notification in homeassistant.
 
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
 
+## Donate
+
 | Donate | Developer |
 | --- | --- |
 | <a href="https://www.paypal.me/swetoast"><img align="center" src="https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png"></a>   | <a href="https://github.com/swetoast">Toast</a></div> |
+
+or contribute code to the project :) just make sure to lint your stuff before submitting.
 
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
