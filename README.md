@@ -1,7 +1,7 @@
 # Raspberry Pi Power Supply Checker
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md) 
-![Contributors][contributors-shield]
+[![Contributors][contributors-shield]][contributors]
 
 ![Project Maintenance][maintenance-shield1] 
 [![Discord][discord-shield]][discord]
