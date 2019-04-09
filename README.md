@@ -19,7 +19,7 @@ Place the component at this location on your setup:
 
 Then add this too your configuration
 
-**Example configuration.yaml:**
+***Example configuration.yaml:***
 
 ```yaml
 sensor:
