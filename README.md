@@ -1,7 +1,9 @@
 # Raspberry Pi Power Supply Checker
 [![GitHub Release][releases-shield]][releases]
-![Project Maintenance][maintenance-shield1]
+[![License][license-shield]](LICENSE.md) 
+![Contributors][contributors-shield]
 
+![Project Maintenance][maintenance-shield1] 
 [![Discord][discord-shield]][discord]
 
 A sensor for Home-Assistant that checks your power supply and reports back to your setup
@@ -53,8 +55,11 @@ and then this as an automation that sets off a notification in homeassistant.
 
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
 
+
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/custom-components/sensor.rpi_power.svg?style=for-the-badge
+[contributors]: https://github.com/custom-components/sensor.rpi_power/graphs/contributors/
 [license-shield]: https://img.shields.io/github/license/custom-components/sensor.rpi_power.svg?style=for-the-badge
 [maintenance-shield1]: https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/custom-components/sensor.rpi_power.svg?style=for-the-badge
