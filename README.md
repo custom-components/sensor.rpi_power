@@ -12,7 +12,11 @@ For more information about Raspberry Pi Power supplies check the following link
 https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power
 
 ## Getting started
-Place the component at this location on your setup: `custom_components/rpi_power/sensor.py`
+Place the component at this location on your setup: 
+
+* Hass.io: `/custom_components/rpi_power/sensor.py`
+* Hassbian / Other: `<config directory>/custom_components/untappd/sensor.py`
+
 Then add this too your configuration
 
 **Example configuration.yaml:**
