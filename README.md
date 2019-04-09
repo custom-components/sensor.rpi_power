@@ -9,10 +9,6 @@
 A sensor for Home-Assistant that checks your power supply and reports back to your setup
 this simple sensor reports values from the kernel and if it reports anything else then 0 then there are issues with the power supply.
 
-| Donate | Developer |
-| --- | --- |
-| <a href="https://www.paypal.me/swetoast"><img align="center" src="https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png"></a>   | <a href="https://github.com/swetoast">Toast</a></div> |
-
 For more information about Raspberry Pi Power supplies check the following link
 
 https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power
@@ -59,6 +55,9 @@ and then this as an automation that sets off a notification in homeassistant.
 
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
 
+| Donate | Developer |
+| --- | --- |
+| <a href="https://www.paypal.me/swetoast"><img align="center" src="https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png"></a>   | <a href="https://github.com/swetoast">Toast</a></div> |
 
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
