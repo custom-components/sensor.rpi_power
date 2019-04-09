@@ -61,6 +61,6 @@ Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFound
 [contributors-shield]: https://img.shields.io/github/contributors/custom-components/sensor.rpi_power.svg?style=for-the-badge
 [contributors]: https://github.com/custom-components/sensor.rpi_power/graphs/contributors/
 [license-shield]: https://img.shields.io/github/license/custom-components/sensor.rpi_power.svg?style=for-the-badge
-[maintenance-shield1]: https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge
+[maintenance-shield1]: https://img.shields.io/badge/maintainer-Toast%20%40swetoast-blue.svg?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/custom-components/sensor.rpi_power.svg?style=for-the-badge
 [releases]: https://github.com/custom-components/sensor.rpi_power/releases
