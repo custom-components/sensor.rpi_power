@@ -4,10 +4,16 @@
 
 [![Discord][discord-shield]][discord]
 
-A sensor that checks your Raspberry Pi charger so its not giving you undervoltage.
+A sensor for Home-Assistant that checks your power supply and reports back to your setup
+this simple sensor reports values from the kernel and if it reports anything else then 0 then there are issues with the power supply.
 
-To get started put `/custom_components/sensor/rpi_power.py` here:  
-`<config directory>/custom_components/rpi_power/`  and rename it to sensor.py
+For more information about Raspberry Pi Power supplies check the following link
+
+https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power
+
+## Getting started
+Place the component at this location on your setup: `custom_components/rpi_power/sensor.py`
+Then add this too your configuration
 
 **Example configuration.yaml:**
 
@@ -16,19 +22,7 @@ sensor:
   platform: rpi_power
 ```
 
-**Optional config options:**  
-
-| key | required | default | description
-| --- | --- | --- | ---
-| **text_state** | no | `false` | Sets the description as the state if `true`.
-
-⚠️ This requires Kernel 4.14 or higher.
-
-Here is some more information about how to improve your Raspberry Pi power situation.
-
-https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power
-
-Here is a simple automation example that will notify you if the psu is failing 
+and then this as an automation that sets off a notification in homeassistant.
 
 ```yaml
 - id: 'rpi_power_issue'
@@ -46,7 +40,15 @@ Here is a simple automation example that will notify you if the psu is failing
       message: "Charger reported {{ states.sensor.rpi_power_status.state }}"
       title: "RPI Power Issue"
 ```
-***
+
+**Optional config options:**  
+
+| key | required | default | description
+| --- | --- | --- | ---
+| **text_state** | no | `false` | Sets the description as the state if `true`.
+
+⚠️ This requires Kernel 4.14 or higher.
+
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
 
 [discord]: https://discord.gg/Qa5fW2R
