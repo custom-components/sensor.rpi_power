@@ -42,7 +42,7 @@ class RaspberryChargerSensor(Entity):
         """The update method"""
         _throttled = open(SYSFILE, 'r').read()[:-1]
         if _throttled == '0':
-            self._description = 'No throttling detected'
+            self._description = 'Working as intended'
         elif _throttled == '1000':
             self._description = 'An under-voltage has occurred.'
         elif _throttled == '2000':
