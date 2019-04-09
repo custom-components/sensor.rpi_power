@@ -1,6 +1,8 @@
 # Raspberry Pi Power Supply Checker
+[![GitHub Release][releases-shield]][releases]
+![Project Maintenance][maintenance-shield1]
+[![Discord][discord-shield]][discord]
 
-[![Version](https://img.shields.io/badge/version-0.0.9-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2019.svg?style=for-the-badge)](#) [![maintainer](https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge)](#) [![forum](https://img.shields.io/badge/forum-visit-orange.svg?style=for-the-badge)](https://community.home-assistant.io/t/raspberry-pi-power-sensor-updated-2018-07-03/58155)   
 A sensor that checks your Raspberry Pi charger so its not giving you undervoltage.
 
 To get started put `/custom_components/sensor/rpi_power.py` here:  
@@ -48,3 +50,10 @@ Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFound
 
 Licensed under:
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)  
+
+[discord]: https://discord.gg/Qa5fW2R
+[discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/custom-components/sensor.rpi_power.svg?style=for-the-badge
+[maintenance-shield1]: https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge
+[releases-shield]: https://img.shields.io/github/release/custom-components/sensor.rpi_power.svg?style=for-the-badge
+[releases]: https://github.com/custom-components/sensor.rpi_power/releases
