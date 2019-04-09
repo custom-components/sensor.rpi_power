@@ -1,4 +1,5 @@
 # Raspberry Pi Power Supply Checker
+[![License][license-shield]](LICENSE.md)
 [![GitHub Release][releases-shield]][releases]
 ![Project Maintenance][maintenance-shield1]
 [![Discord][discord-shield]][discord]
@@ -47,9 +48,6 @@ Here is a simple automation example that will notify you if the psu is failing
 ```
 ***
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
-
-Licensed under:
-[Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)  
 
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
