@@ -1,7 +1,7 @@
 # Raspberry Pi Power Supply Checker
-[![License][license-shield]](LICENSE.md)
 [![GitHub Release][releases-shield]][releases]
 ![Project Maintenance][maintenance-shield1]
+
 [![Discord][discord-shield]][discord]
 
 A sensor that checks your Raspberry Pi charger so its not giving you undervoltage.
