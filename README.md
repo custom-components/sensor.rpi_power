@@ -1,9 +1,8 @@
 # Raspberry Pi Power Supply Checker
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md) 
+![Project Maintenance][maintenance-shield1]
 [![Contributors][contributors-shield]][contributors]
-
-![Project Maintenance][maintenance-shield1] 
 [![Discord][discord-shield]][discord]
 
 A sensor for Home-Assistant that checks your power supply and reports back to your setup
