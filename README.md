@@ -11,6 +11,9 @@ this simple sensor reports values from the kernel and if it reports anything els
 For more information about Raspberry Pi Power supplies check the following [link](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power)
 
 ## Getting started
+
+⚠️ This requires Kernel 4.14 or higher.
+
 Place the component at this location on your setup: 
 
 * Hass.io: `/custom_components/rpi_power/sensor.py`
@@ -60,8 +63,6 @@ and then this as an automation that sets off a notification in homeassistant.
 | key | required | default | description
 | --- | --- | --- | ---
 | **text_state** | no | `false` | Sets the description as the state if `true`.
-
-⚠️ This requires Kernel 4.14 or higher.
 
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
 
