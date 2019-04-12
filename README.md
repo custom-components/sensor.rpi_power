@@ -35,6 +35,7 @@ Here is a list of the current values the component checks for
 ```yaml
 sensor:
   platform: rpi_power
+  text_state: true
 ```
 
 and then this as an automation that sets off a notification in homeassistant.
