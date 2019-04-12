@@ -76,8 +76,7 @@ cat /sys/devices/platform/soc/soc:firmware/get_throttled
 Then post in the bug report makes it so much easier for me to implement the missing values.
 
 ## Donate
-
-| Donate | Developer |
+| | |
 | --- | --- |
 | <a href="https://www.paypal.me/swetoast"><img align="center" src="https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png"></a>   | <a href="https://github.com/swetoast">Toast</a></div> |
 
