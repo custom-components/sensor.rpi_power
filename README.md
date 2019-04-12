@@ -8,9 +8,7 @@
 A sensor for Home-Assistant that checks your power supply and reports back to your setup
 this simple sensor reports values from the kernel and if it reports anything else then 0 then there are issues with the power supply.
 
-For more information about Raspberry Pi Power supplies check the following link
-
-https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power
+For more information about Raspberry Pi Power supplies check the following [link](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power)
 
 ## Getting started
 Place the component at this location on your setup: 
