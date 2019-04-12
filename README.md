@@ -54,6 +54,25 @@ and then this as an automation that sets off a notification in homeassistant.
 
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
 
+| Value  | Description |
+| ------------- | ------------- |
+| 0  | Everything is working as intended  |
+| 1000*  | Under-voltage was detected, consider getting a uninterruptible power supply for your Raspberry Pi. |
+| 2000* | Your Raspberry Pi is limited due to a bad powersupply, replace the power supply. |
+| 3000* | Your Raspberry Pi is limited due to a bad powersupply, replace the power supply. |
+| 4000* | The Raspberry Pi is throttled due to a bad power supply this can lead to corruption and instability, please replace your changer and cables. |
+| 5000* | The Raspberry Pi is throttled due to a bad power supply this can lead to corruption and instability, please replace your changer and cables. |
+| 8000* | Your Raspberry Pi is overheating, consider getting a fan or heat sinks. |
+
+## Issues
+Use the bugtracker for your issues if a value is missing please use the following command to get the value
+
+```bash
+cat /sys/devices/platform/soc/soc:firmware/get_throttled
+```
+
+Then post in the bug report makes it so much easier for me to implement the missing values.
+
 ## Donate
 
 | Donate | Developer |
