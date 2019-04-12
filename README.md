@@ -12,7 +12,7 @@ For more information about Raspberry Pi Power supplies check the following [link
 
 ## Getting started
 
-⚠️ This requires Kernel 4.14 or higher.
+⚠️ This requires kernel 4.14 or higher.
 
 Place the component at this location on your setup: 
 
