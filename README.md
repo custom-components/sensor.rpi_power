@@ -19,6 +19,8 @@ Place the component at this location on your setup:
 * Hass.io: `/custom_components/rpi_power/sensor.py`
 * Hassbian / Other: `<config directory>/custom_components/rpi_power/sensor.py`
 
+ 	\__init__.py and manifest.json needs to be in the same folder
+
 Here is a list of the current values the component checks for 
 
 | Value  | Description |
