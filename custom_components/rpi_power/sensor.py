@@ -8,7 +8,7 @@ from homeassistant.helpers.entity import Entity
 import homeassistant.helpers.config_validation as cv
 from homeassistant.components.sensor import (PLATFORM_SCHEMA)
 
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -42,6 +42,7 @@ class RaspberryChargerSensor(Entity):
         """The update method"""
         _throttled = open(SYSFILE, 'r').read()[:-1]
         _throttled = _throttled[:4]
+        if _throttled == '0':
             self._description = 'Everything is working as intended'
         elif _throttled == '1000':
             self._description = 'Under-voltage was detected, consider getting a uninterruptible power supply for your Raspberry Pi.'
