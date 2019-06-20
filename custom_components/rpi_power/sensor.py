@@ -42,6 +42,7 @@ class RaspberryChargerSensor(Entity):
         """The update method"""
         _throttled = open(SYSFILE, 'r').read()[:-1]
         _throttled = _throttled[:4]
+        if _throttled == '0':
             self._description = 'Everything is working as intended'
         elif _throttled == '1000':
             self._description = 'Under-voltage was detected, consider getting a uninterruptible power supply for your Raspberry Pi.'
