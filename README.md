@@ -44,20 +44,25 @@ sensor:
 and then this as an automation that sets off a notification in homeassistant.
 
 ```yaml
-- id: 'rpi_power_issue'
+- id: rpi_power_issue
   alias: Power Problem Notification
   trigger:
   - platform: numeric_state
     entity_id: sensor.rpi_power_status
+    value_template: '{{ state.attributes.value }}'
     above: 0
     for:
-      minutes: 1
+      minutes: 5
   condition:
   action:
-    service: persistent_notification.create
-    data:
-      message: "Charger reported {{ states.sensor.rpi_power_status.state }}"
-      title: "Power Supply Issue"
+  - service: persistent_notification.create
+    data_template:
+      message: "RPI Power reported {{ states.sensor.rpi_power_status.state }}. The state had changed from {{ trigger.from_state.state }} "
+      title: Power Supply Issue
+  - service: notify.notify
+    data_template:
+      message: "RPI Power reported {{ states.sensor.rpi_power_status.state }}. The state had  changed from {{ trigger.from_state.state }}"
+      title: Power Supply Issue
 ```
 
 **Optional config options:**  
