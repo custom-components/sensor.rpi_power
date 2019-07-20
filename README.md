@@ -27,10 +27,10 @@ Here is a list of the current values the component checks for
 | ------------- | ------------- |
 | 0  | Everything is working as intended  |
 | 1000*  | Under-voltage was detected, consider getting a uninterruptible power supply for your Raspberry Pi. |
-| 2000* | Your Raspberry Pi is limited due to a bad powersupply, replace the power supply. |
-| 3000* | Your Raspberry Pi is limited due to a bad powersupply, replace the power supply. |
-| 4000* | The Raspberry Pi is throttled due to a bad power supply this can lead to corruption and instability, please replace your changer and cables. |
-| 5000* | The Raspberry Pi is throttled due to a bad power supply this can lead to corruption and instability, please replace your changer and cables. |
+| 2000* | Your Raspberry Pi is limited due to a bad power supply, replace the power supply. |
+| 3000* | Your Raspberry Pi is limited due to a bad power supply, replace the power supply. |
+| 4000* | Your Raspberry Pi is throttled due to a bad power supply this can lead to corruption and instability, please replace your charger and cables. |
+| 5000* | Your Raspberry Pi is throttled due to a bad power supply this can lead to corruption and instability, please replace your charger and cables. |
 | 8000* | Your Raspberry Pi is overheating, consider getting a fan or heat sinks. |
 
 ***Example configuration.yaml***
