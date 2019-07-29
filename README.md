@@ -21,6 +21,8 @@ Place the component at this location on your setup:
 
  	\__init__.py and manifest.json needs to be in the same folder
 
+and then restart homeassistant to make sure the component loads.
+
 Here is a list of the current values the component checks for 
 
 | Value  | Description |
