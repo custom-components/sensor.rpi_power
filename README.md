@@ -82,14 +82,7 @@ Use the bugtracker for your issues if a value is missing please use the followin
 cat /sys/devices/platform/soc/soc:firmware/get_throttled
 ```
 
-Then post in the bug report makes it so much easier for me to implement the missing values.
-
-## Donate
-| | |
-| --- | --- |
-| <a href="https://www.paypal.me/swetoast"><img align="center" src="https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png"></a>   | <a href="https://github.com/swetoast">Toast</a></div> |
-
-or contribute code to the project :) just make sure to lint your stuff before submitting.
+Then post in the bug report makes it so much easier for me to implement the missing values or contribute code to the project :) just make sure to lint your stuff before submitting.
 
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
