@@ -55,7 +55,6 @@ and then this as an automation that sets off a notification in homeassistant.
     above: 0
     for:
       minutes: 5
-  condition:
   action:
   - service: persistent_notification.create
     data_template:
