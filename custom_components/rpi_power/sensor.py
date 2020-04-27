@@ -12,7 +12,7 @@ __version__ = '0.1.5'
 
 _LOGGER = logging.getLogger(__name__)
 
-SYSFILE = '/sys/devices/platform/soc/soc:firmware/get_throttled'
+SYSFILE = '/sys/class/hwmon/hwmon0/in0_lcrit_alarm'
 
 CONF_TEXT_STATE = 'text_state'
 
