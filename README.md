@@ -10,6 +10,11 @@ this simple sensor reports values from the kernel and if it reports anything els
 
 <h2>Breaking change: this project went from sensor to binary_sensor.</h2>
 
+* Manually download and install the files from the aforementioned URL into your custom_components\rpi_power
+* Modify your config.yaml and make sure that - platform: rpi_power is under binary_sensor: section (create if missing) instead of sensor: (that's the breaking change the author is referring to in the readme)
+* Restart Home Assistant
+* Replace in your lovelace cards / automations / scripts / whatever... any mention to sensor.rpi_power_status by binary_sensor.rpi_power_status
+
 For more information about Raspberry Pi Power supplies check the following [link](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power).
 
 ## Getting started
