@@ -2,7 +2,7 @@
 A sensor platform which detects underruns and capped status from the official Raspberry Pi Kernel.
 Minimal Kernel needed is 4.14+
 """
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 
 import logging
 import os
