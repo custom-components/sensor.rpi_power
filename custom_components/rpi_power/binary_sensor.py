@@ -6,6 +6,14 @@ __version__ = '0.2.0'
 
 import logging
 import os
+from homeassistant.helpers.discovery import async_load_platform
+
+DOMAIN = "rpi_power"
+
+async def async_setup(hass, config):
+    """Set up the rpi_power component."""
+    await async_load_platform(hass, "binary_sensor", DOMAIN, {}, config)
+    return True
 
 from homeassistant.components.binary_sensor import (
     DEVICE_CLASS_PROBLEM,
