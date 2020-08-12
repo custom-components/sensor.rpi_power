@@ -8,6 +8,8 @@
 A sensor for Home Assistant that checks your power supply and reports back to your setup
 this simple sensor reports values from the kernel and if it reports anything else then 0 then there are issues with the power supply.
 
+<h2>Breaking change: this project went from sensor to binary_sensor.</h2>
+
 For more information about Raspberry Pi Power supplies check the following [link](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power).
 
 ## Getting started
@@ -36,8 +38,6 @@ Here is a list of the current values the component checks for:
 | 8000* | Your Raspberry Pi is overheating, consider getting a fan or heat sinks. |
 
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home Assistant.
-
-Breaking change: this project went from sensor to binary_sensor.
 
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
