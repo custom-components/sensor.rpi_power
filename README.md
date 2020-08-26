@@ -23,8 +23,8 @@ For more information about Raspberry Pi Power supplies check the following [link
 
 Place the component at this location on your setup:
 
-* Home Assistant (former Hass.io): `/custom_components/rpi_power/sensor.py`
-* Home Assistant Core / Hassbian / Other: `<config directory>/custom_components/rpi_power/sensor.py`
+* Home Assistant (former Hass.io): `/custom_components/rpi_power/binary_sensor.py`
+* Home Assistant Core / Hassbian / Other: `<config directory>/custom_components/rpi_power/binary_sensor.py`
 
  	\__init__.py and manifest.json needs to be in the same folder
 
